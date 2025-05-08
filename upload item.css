@@ -1,0 +1,32 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,200;0,300;0,700;1,200;1,300;1,600&family=Roboto&family=Signika+Negative:wght@300&display=swap');
+
+
+.form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .form-container input,
+  .form-container select,
+  .form-container textarea,
+  .form-container button {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .form-container button {
+    background-color: #008080;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }

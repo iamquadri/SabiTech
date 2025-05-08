@@ -1,0 +1,272 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!-- link -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+    <!-- swiper.js -->
+    <rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+
+
+
+
+
+
+
+    <title>Zeezat Givetouch</title>
+</head>
+<body>
+
+    
+    <nav>
+        <div class="container nav_container">
+            <a href="#">
+               <img class="speed" src="./images/Sabigive.JPG" alt="">
+                <!-- <h4 class="rad">Sabi<span class="set">Give</span></h4> -->
+            </a>
+            <ul class="nav_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="SignUp.html" class="btn btn-warning">SignUp</a>
+              
+
+                 <!-- <div id="login-btn">
+                    <button class="btn">USER REG</button>
+                    <i class="fa fa-user"></i>
+            
+                </div> -->
+            </ul>
+
+            <button id="open-menu-btn"> <i class="fa fa-bars"></i></button>
+            <button id="close-menu-btn"> <i class="fa fa-times"></i></button>
+
+            <!-- <div id="login-btn">
+                <button class="btn">USER REG</button>
+                <i class="fa fa-user"></i>
+        
+            </div> -->
+
+        </div>
+    </nav>
+
+
+    <header>
+        <div class="container header_container">
+            <div class="header_left">
+                <h2>GIVE AND RECIEVE, Na We Dey Give and Recieve</h2>
+                <p class="stuff">
+                    Matching people who want to give stuff away with people who 
+                    need it.
+                </p>
+                <a href="about.html" class="btn btn-warning">SABIGIVE</a>
+            </div>
+
+            <div class="header_right">
+                <div class="header_right-image">
+                    <img src="./images/friends.JPG" alt="">
+
+                </div>
+
+
+            </div>
+
+            <!-- <a href="#" class="btn">Sabi Give</a> -->
+        </div>
+    </header>
+
+    <!-- <section>
+        <div class="form-container">
+            <h2>Signup to SabiGive</h2>
+        
+            <div id="step1">
+              <input type="tel" placeholder="Enter Phone Number" id="phone" />
+              <button onclick="sendOTP()">Send OTP</button>
+            </div>
+        
+            <div id="step2" style="display: none;">
+              <input type="text" placeholder="Enter OTP" id="otp" />
+              <button onclick="verifyOTP()">Verify</button>
+            </div>
+        
+            <div id="step3" style="display: none;">
+              <select id="location">
+                <option value="">Select Location</option>
+                <option>Isolo</option>
+                <option>Ketu</option>
+                <option>Shomolu</option>
+              </select>
+              <input type="email" placeholder="Enter Email" id="email" />
+              <button onclick="finishSignup()">Continue</button>
+            </div>
+        </div>
+
+    </section> -->
+
+    <body>
+        <header class="header">
+          <h2>SabiGive</h2>
+          <button class="upload-btn" onclick="goToUpload()">+ Upload Item</button>
+        </header>
+      
+        <div class="tabs">
+          <button onclick="filterItems('food')" class="tab active" id="food-tab">Food Items</button>
+          <button onclick="filterItems('non-food')" class="tab" id="non-food-tab">Non-Food Items</button>
+        </div>
+      
+        <div id="item-list" class="item-list">
+            <!-- <div class="card">
+                <img src="./images/beans pea.JPG" alt="Item Image">
+                <h3>Pizza</h3>
+                <p>New York</p>
+                <button class="request-btn">Request</button>
+            </div>
+            
+            <div class="item-card">
+                <img src="./images/Bull.JPG" alt="Item Image">
+                <h3>Sushi</h3>
+                <p>California</p>
+                <button class="request-btn">Request</button>
+            </div>
+            
+            <div class="item-card">
+                <img src="./images/spag.JPG" alt="Item Image">
+                <h3>Burger</h3>
+                <p>Texas</p>
+                <button class="request-btn">Request</button>
+            </div> -->
+          <!-- Item cards will be rendered here -->
+        </div>
+
+
+    <div class="form-container">
+        <h2>Upload New Item</h2>
+    
+        <input type="file" id="itemImage" accept="image/*" />
+        <input type="text" id="itemTitle" placeholder="Enter Item Title" />
+        <select id="itemCategory">
+          <option value="">Select Category</option>
+          <option value="food">Food</option>
+          <option value="non-food">Non-Food</option>
+        </select>
+        <textarea id="itemDescription" placeholder="Short Description"></textarea>
+    
+        <button onclick="submitItem()">Submit</button>
+      </div>  
+
+
+      <div class="item-details">
+        <img id="detailImage" src="./images/arm chair.PNG" alt="Item Image" />
+        <h2 id="detailTitle">Title</h2>
+        <p id="detailDescription">Description</p>
+        <small id="detailLocation">Location</small><br/><br/>
+        <button onclick="startChat()">Request This Item</button>
+      </div>
+
+
+
+
+
+      <div class="profile-container">
+        <h1>My Profile</h1>
+    
+        <section class="profile-section">
+          <h2>My Uploads</h2>
+          <div class="item-list">
+            <!-- Example of uploaded items (will be dynamically added in JS) -->
+            <div class="card">
+              <img src="./images/arm couch.PNG" alt="Item Image" />
+              <h4>Item Title</h4>
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+            <div class="card">
+                <img src="./images/leather bag.JPG" alt="Item Image" />
+                <h4>Item Title</h4>
+                <button>Edit</button>
+                <button>Delete</button>
+              </div>
+              <div class="card">
+                <img src="./images/Galaxy samsung.JPG" alt="Item Image" />
+                <h4>Item Title</h4>
+                <button>Edit</button>
+                <button>Delete</button>
+              </div>
+            <!-- More items here -->
+          </div>
+        </section>
+    
+        <section class="profile-section">
+          <h2>My Requests</h2>
+          <div class="item-list">
+            <!-- Example of requested items (will be dynamically added in JS) -->
+            <div class="card">
+              <img src="./images/pink couch.JPG" alt="Item Image" />
+              <h4>Item Title</h4>
+              <button>Request</button>
+            </div>
+            <div class="card">
+                <img src="./images/iphone 13.JPG" alt="Item Image" />
+                <h4>Item Title</h4>
+                <button>Request</button>
+              </div>
+              <div class="card">
+                <img src="./images/food items.JPG" alt="Item Image" />
+                <h4>Item Title</h4>
+                <button>Request</button>
+              </div>
+            <!-- More items here -->
+          </div>
+        </section>
+    
+        <section class="profile-section">
+          <h2>Referral Points</h2>
+          <p>You have earned <strong>100 points</strong>!</p>
+          <button>Share Referral Code</button>
+        </section>
+    </div>
+
+
+    <div class="footer_copyright">
+        <small>Copyright &copy; Sabi<span class="sed">Give</span></small>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</html>

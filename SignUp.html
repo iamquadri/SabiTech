@@ -1,0 +1,85 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup - SabiGive</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+
+
+    <nav>
+        <div class="container nav_container">
+            <a href="#">
+               <img class="speed" src="./images/Sabigive.JPG" alt="">
+                <!-- <h4 class="rad">Sabi<span class="set">Give</span></h4> -->
+            </a>
+            <ul class="nav_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="SignUp.html" class="btn btn-warning">SignUp</a>
+              
+
+                 <!-- <div id="login-btn">
+                    <button class="btn">USER REG</button>
+                    <i class="fa fa-user"></i>
+            
+                </div> -->
+            </ul>
+
+            <button id="open-menu-btn"> <i class="fa fa-bars"></i></button>
+            <button id="close-menu-btn"> <i class="fa fa-times"></i></button>
+
+            <!-- <div id="login-btn">
+                <button class="btn">USER REG</button>
+                <i class="fa fa-user"></i>
+        
+            </div> -->
+
+        </div>
+    </nav>
+
+
+
+
+    <section>
+
+        <div class="form-container">
+            <h2>Signup to SabiGive</h2>
+        
+            <div id="step1">
+              <input type="tel" placeholder="Enter Phone Number" id="phone" />
+              <button onclick="sendOTP()">Send OTP</button>
+            </div>
+        
+            <div id="step2" style="display: none;">
+              <input type="text" placeholder="Enter OTP" id="otp" />
+              <button onclick="verifyOTP()">Verify</button>
+            </div>
+        
+            <div id="step3" style="display: none;">
+              <select id="location">
+                <option value="">Select Location</option>
+                <option>Isolo</option>
+                <option>Ketu</option>
+                <option>Shomolu</option>
+              </select>
+              <input type="email" placeholder="Enter Email" id="email" />
+              <button onclick="finishSignup()">Continue</button>
+            </div>
+          </div>
+
+
+    </section>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,200;0,300;0,700;1,200;1,300;1,600&family=Roboto&family=Signika+Negative:wght@300&display=swap');
+
+.chat-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .chat-box {
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+  }
+  
+  .chat-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .chat-input button {
+    padding: 10px 15px;
+    background: #008080;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }

@@ -1,0 +1,33 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Upload Item - SabiGive</title>
+  <link rel="stylesheet" href="./upload item.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Upload New Item</h2>
+
+    <input type="file" id="itemImage" accept="image/*" />
+    <input type="text" id="itemTitle" placeholder="Enter Item Title" />
+    <select id="itemCategory">
+      <option value="">Select Category</option>
+      <option value="food">Food</option>
+      <option value="non-food">Non-Food</option>
+    </select>
+    <textarea id="itemDescription" placeholder="Short Description"></textarea>
+
+    <button onclick="submitItem()">Submit</button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
